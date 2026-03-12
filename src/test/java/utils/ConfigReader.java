@@ -1,0 +1,20 @@
+package utils;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class ConfigReader {
+
+    static Properties prop;
+
+    static {
+        try {
+            prop = new Properties();
+            prop.load(new FileInputStream("C:\\Users\\ADMIN\\eclipse-workspace\\On_24_Automation\\src\\test\\resources\\config.properties"));
+        } catch (Exception e) { }
+    }
+
+    public static String getProperty(String key) {
+        return prop.getProperty(key);
+    }
+}
