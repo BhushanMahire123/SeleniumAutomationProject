@@ -18,6 +18,9 @@ And User clicks on Reg Tab
       | urlKey | usernameKey             | passwordKey             | eventid     |
       | url    | usernameKeyInPropFile   | passwordKeyInPropFile   | eventidKey  |
 
+ 
+ 
+ 
   @Smoke
   Scenario Outline: User resets password successfully
   When User opens URL "<urlKey>"
@@ -33,11 +36,15 @@ And User clicks on Reg Tab
   And user wait additional 10 sec
   And User clicks on Save Button
 
-  Examples: 
-    | urlKey | usernameKey            | passwordKey            | currentPasswordKey        | newPasswordKey           | confirmPasswordKey         |
-   | url    | Newtemp_type_presenter_user  | Newtemp_type_presenter_password  | Newtemp_type_presenter_password | newPasswordInPropFile    | confirmPasswordInPropFile  |
-   | url    | elite.react.automation.elite.editpermissionone.user  | elite.react.automation.elite.editpermissionone.password | elite.react.automation.elite.editpermissionone.password| newPasswordInPropFile    | confirmPasswordInPropFile  |
-    | url    | Newtemp_type_forums_user  | Newtemp_type_forums_password | Newtemp_type_forums_password| newPasswordInPropFile    | confirmPasswordInPropFile  |
+  Examples:  
+    | urlKey   | usernameKey                               | passwordKey                               | currentPasswordKey                            | newPasswordKey                                  | confirmPasswordKey                            |
+    | urlNA    | propertyfilename_othereventtyep_username  | propertyfilename_othereventtyep_password  | propertyfilename_othereventtyep_password      | propertyfilename_othereventtyep_password_new    | propertyfilename_othereventtyep_password_conf |
+    | urlEU    | propertyfilename_othereventtyep_username  | propertyfilename_othereventtyep_password  | propertyfilename_othereventtyep_password      | propertyfilename_othereventtyep_password_new    | propertyfilename_othereventtyep_password_conf  |
+ 
+    
+    
+    
+    
     
     
  @Sanity
@@ -169,11 +176,27 @@ And user enter company name "<Company>"
 And user select inperson "<Attendee_Type>"
 And user clicks on register button
 Examples:
-| urlKey | usernameKey        | passwordKey              | title                |date           |  venueName          | venueAddress             |Firstname          |Lastname           |Email            |Company              |Attendee_Type             |
-| url    | usernameKeyInPropFile | passwordKeyInPropFile | eventtitleInPropFile |dateInPropFile | venueNameInPropFile | venueAddressInPropFile  |FirstnameInPropFile|LastnameInPropFile |EmailInPropFile  | CompanyInPropFile   | InPropFile_Attendee_Type |
+| urlKey | usernameKey           | passwordKey              | title                |date           |  venueName          | venueAddress             |Firstname          |Lastname           |Email            |Company              |Attendee_Type             |
+| url   | usernameKeyInPropFile | passwordKeyInPropFile | eventtitleInPropFile |dateInPropFile | venueNameInPropFile | venueAddressInPropFile  |FirstnameInPropFile|LastnameInPropFile |EmailInPropFile  | CompanyInPropFile   | InPropFile_Attendee_Type |
 
 
 
 
+@RegressionTest
+Scenario Outline: Verify user can access vanity URL from event overview page
+
+when User opens URL "<urlKey>"
+And User enters Email as "<usernameKey>" and Password as "<passwordKey>"
+And Click on Login
+When User searches webcast event with event ID "<eventid>"
+And User clicks on Search button
+Then Verify the title of the searched event is displayed
+And User clicks on the title of the searched event
+Then User can see overview page title "Webcast Elite | Overview"
+And User clicks on Reg Tab
+
+ Examples:
+      | urlKey | usernameKey             | passwordKey             | eventid     |
+      | url    | usernameKeyInPropFile   | passwordKeyInPropFile   | eventidKey  |
 
 

@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  postgres-db:
+    image: postgres:11
+    container_name: healenium-db
+    environment:
+      POSTGRES_USER: healenium_user
+      POSTGRES_PASSWORD: healenium_password
+      POSTGRES_DB: healenium
+    ports:
+      - "5432:5432"
+
+  healenium:
+    image: healenium/hlm-backend:latest
+    container_name: healenium-backend
+    depends_on:
+      - postgres-db
+    ports:
+      - "7878:7878"
+
+  selector-imitator:
+    image: healenium/hlm-selector-imitator:latest
+    container_name: selector-imitator
+    ports:
+      - "8000:8000"

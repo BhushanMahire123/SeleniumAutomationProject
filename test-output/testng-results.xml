@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-09T14:22:43 IST" name="Default suite" finished-at="2026-03-09T14:26:13 IST" duration-ms="209702">
+  <suite started-at="2026-04-05T22:52:11 IST" name="Default suite" finished-at="2026-04-05T22:56:33 IST" duration-ms="261370">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@186f8716]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1b6e1eff]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-09T14:22:43 IST" name="Default test" finished-at="2026-03-09T14:26:13 IST" duration-ms="209702">
+    <test started-at="2026-04-05T22:52:11 IST" name="Default test" finished-at="2026-04-05T22:56:33 IST" duration-ms="261370">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@186f8716]" started-at="2026-03-09T14:22:43 IST" name="setUpClass" finished-at="2026-03-09T14:22:45 IST" duration-ms="1766" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@1b6e1eff]" started-at="2026-04-05T22:52:11 IST" name="setUpClass" finished-at="2026-04-05T22:52:12 IST" duration-ms="1190" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3b0c3951]]>
+                <![CDATA[org.testng.TestRunner@adc8683]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@186f8716]" started-at="2026-03-09T14:22:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-09T14:25:00 IST" duration-ms="134360" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1b6e1eff]" started-at="2026-04-05T22:52:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T22:56:32 IST" duration-ms="259908" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User resets password successfully"]]>
+                <![CDATA["hybrid flow"]]>
               </value>
             </param>
             <param index="1">
@@ -34,56 +34,20 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@186f8716]" started-at="2026-03-09T14:25:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-09T14:26:13 IST" duration-ms="73207" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User resets password successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Hybrid High Priority flow"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Failed to click Account Menu inside nested Shadow DOM]]>
-            </message>
+          <exception class="java.lang.reflect.UndeclaredThrowableException">
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Failed to click Account Menu inside nested Shadow DOM
-at Page_Object.Reset_Password.click_on_Account_Menu(Reset_Password.java:75)
-at project2.stepDefinitions.Reset_Password_Test.user_clicks_account_menu(Reset_Password_Test.java:29)
-at ✽.User clicks on Account Menu(file:///C:/Users/ADMIN/eclipse-workspace/On_24_Automation/src/test/resources/login.feature:27)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"on24-elite-top-nav-bar[product-code='webcasts']"}
-  (Session info: chrome=145.0.7632.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c34793e9f86288f9d456f4e253b1818, findElement {using=css selector, value=on24-elite-top-nav-bar[product-code='webcasts']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62199}, goog:processID: 15132, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62199/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c34793e9f86288f9d456f4e253b1818
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at Page_Object.Reset_Password.click_on_Account_Menu(Reset_Password.java:58)
-at project2.stepDefinitions.Reset_Password_Test.user_clicks_account_menu(Reset_Password_Test.java:29)
+              <![CDATA[java.lang.reflect.UndeclaredThrowableException
+at jdk.proxy2/jdk.proxy2.$Proxy38.executeScript(Unknown Source)
+at Page_Object.Hybrid.verifyattendeetype(Hybrid.java:236)
+at project2.stepDefinitions.hybrid_test.user_scroll_to_Attendee_type_section(hybrid_test.java:123)
+at ✽.user scroll to Attendee_type section(file:///C:/Users/ADMIN/eclipse-workspace/On_24_Automation/src/test/resources/login.feature:166)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:60)
+at jdk.proxy2/jdk.proxy2.$Proxy38.executeScript(Unknown Source)
+at Page_Object.Hybrid.verifyattendeetype(Hybrid.java:236)
+at project2.stepDefinitions.hybrid_test.user_scroll_to_Attendee_type_section(hybrid_test.java:123)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -130,13 +94,42 @@ at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: Failed to find element using By.xpath: //div[@title='attendee_type']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: driver.version: RemoteWebDriver
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:72)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy38.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy41.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:462)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+... 51 more
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.function.BiFunction.apply(Object, Object)" because the return value of "com.epam.healenium.model.SessionContext.getFunctionUrl()" is null
+at com.epam.healenium.processor.GetReferenceElementsProcessor.populateUrlKey(GetReferenceElementsProcessor.java:70)
+at com.epam.healenium.processor.GetReferenceElementsProcessor.execute(GetReferenceElementsProcessor.java:52)
+at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42)
+at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:50)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+... 66 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.reflect.UndeclaredThrowableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@186f8716]" started-at="2026-03-09T14:26:13 IST" name="tearDownClass" finished-at="2026-03-09T14:26:13 IST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1b6e1eff]" started-at="2026-04-05T22:56:32 IST" name="tearDownClass" finished-at="2026-04-05T22:56:33 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

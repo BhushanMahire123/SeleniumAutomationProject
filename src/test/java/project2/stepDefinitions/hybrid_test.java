@@ -16,7 +16,6 @@ public class hybrid_test {
 
     Hybrid Hy;
     ExtentTest test;
-
     public hybrid_test() {
         WebDriver driver = Hooks.getDriver();
         Hy = new Hybrid(driver);
@@ -161,7 +160,7 @@ public class hybrid_test {
     }	
     @And("user enter company name {string}")
     public void user_company_name(String company) {
-    	 Hy.enter_company(company);
+    	 Hy.enter_company(ConfigReader.getProperty(company));
     	
     }
     // In Person Selection

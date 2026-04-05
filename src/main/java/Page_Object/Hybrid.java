@@ -2,6 +2,9 @@ package Page_Object;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +17,8 @@ public class Hybrid extends BasePage {
 
     WebDriver driver;
     WebDriverWait wait;
+
+    private static final Logger log = LogManager.getLogger(Hybrid.class);
 
     public Hybrid(WebDriver driver) {
         super(driver);
@@ -33,7 +38,6 @@ public class Hybrid extends BasePage {
     @FindBy(id = "startDate")
     WebElement dateButton;
 
-    // ✅ CORRECT Hybrid Toggle Locator
     @FindBy(xpath = "//span[normalize-space()='Hybrid']")
     WebElement hybridToggle;
 
@@ -45,309 +49,243 @@ public class Hybrid extends BasePage {
 
     @FindBy(xpath = "//button[contains(@class,'css-1pbvwrv')]")
     WebElement saveButton;
-    
 
     @FindBy(xpath = "//h2[normalize-space()='Email Notifications']")
     WebElement emailsection;
-    
-    @FindBy(xpath = " //button[@id='previewButton0']//span[@class='css-1tjylaa']")
+
+    @FindBy(xpath = "//button[@id='previewButton0']//span[@class='css-1tjylaa']")
     WebElement previewandedit;
-    
+
     @FindBy(css = "button[id='insertToken-1'] svg")
     WebElement inserttoken;
-
- // ================= TOKEN LOCATORS =================
 
     @FindBy(xpath = "//a[@data-param1='#CHECKINQRIMAGE#']")
     WebElement checkInQRToken;
 
     @FindBy(xpath = "//a[@data-param1='#CHECKINQRBADGELINK#']")
     WebElement checkInBadgeToken;
-   
-    
+
     @FindBy(xpath = "//span[contains(text(),'Save')]")
     WebElement savebtn;
 
-    
-    @FindBy(xpath = "//button[@class='css-1s7p710']//span[@class='css-qa3ytp'][normalize-space()='Close']")
+    @FindBy(xpath = "//button[@class='css-1s7p710']//span[normalize-space()='Close']")
     WebElement close;
-    
+
     @FindBy(xpath = "//span[contains(text(),'Yes')]")
     WebElement yesbtn;
-    
+
     @FindBy(xpath = "//div[@title='attendee_type']")
     WebElement Attendee_type;
-    
-    
-    @FindBy(xpath = "  //button[normalize-space()='Link and Embed']")
+
+    @FindBy(xpath = "//button[normalize-space()='Link and Embed']")
     WebElement Link_and_Embed;
-    
-    @FindBy(xpath = "  //p[normalize-space()='Event/Audience Link']")
+
+    @FindBy(xpath = "//p[normalize-space()='Event/Audience Link']")
     WebElement Audience_Link;
-    
-    @FindBy(xpath = "//input[@id='firstname']")
-    WebElement   firstname;
-    
-    @FindBy(xpath = "//input[@id='lastname']")
-    WebElement   lastname;
-   
-    @FindBy(xpath = "//input[@id='email']")
-    WebElement   emailid;
-    
-    @FindBy(xpath = "//input[@id='company']")
-    WebElement   companyname;
-   
-    
-    @FindBy(xpath = "//span[input[@value='In-Person']]")
+
+    @FindBy(id = "firstname")
+    WebElement firstname;
+
+    @FindBy(id = "lastname")
+    WebElement lastname;
+
+    @FindBy(id = "email")
+    WebElement emailid;
+
+    @FindBy(id = "company")
+    WebElement companyname;
+
+    @FindBy(id = "attendee_type198")
     WebElement In_Person;
-    
-    @FindBy(xpath = "//button[@id='submitRegister']")
+
+    @FindBy(id = "submitRegister")
     WebElement registerButton;
 
-   
-  
     // ================= ACTION METHODS =================
 
     public void clickCreate() {
+        log.info("Clicking on Create button");
         wait.until(ExpectedConditions.elementToBeClickable(createButton)).click();
     }
 
     public void enterEventTitle(String title) {
+        log.info("Entering Event Title: {}", title);
         wait.until(ExpectedConditions.visibilityOf(eventTitleField)).clear();
         eventTitleField.sendKeys(title);
     }
 
     public void selectDate(String date) {
+        log.info("Selecting Date: {}", date);
         wait.until(ExpectedConditions.elementToBeClickable(dateButton)).clear();
         dateButton.sendKeys(date);
     }
 
-    // ✅ Scroll to Hybrid Toggle
     public void scrollToHybrid() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", hybridToggle);
+        log.info("Scrolling to Hybrid section");
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hybridToggle);
     }
 
-    // ✅ Click Hybrid Toggle
     public void clickHybrid() {
+        log.info("Clicking on Hybrid toggle");
         wait.until(ExpectedConditions.elementToBeClickable(hybridToggle)).click();
     }
-    
-    // ✅ Verify Venue Visible
+
     public boolean isVenueVisible() {
+        log.info("Verifying Venue field visibility");
         return wait.until(ExpectedConditions.visibilityOf(venueField)).isDisplayed();
     }
 
-    // ✅ Verify Address Visible
     public boolean isAddressVisible() {
+        log.info("Verifying Address field visibility");
         return wait.until(ExpectedConditions.visibilityOf(addressField)).isDisplayed();
     }
 
     public void enterVenue(String venue) {
+        log.info("Entering Venue: {}", venue);
         wait.until(ExpectedConditions.visibilityOf(venueField)).clear();
         venueField.sendKeys(venue);
     }
 
     public void enterAddress(String address) {
+        log.info("Entering Address");
         wait.until(ExpectedConditions.visibilityOf(addressField)).clear();
         addressField.sendKeys(address);
     }
-    
-    
-    
+
     public void clickSave() {
+        log.info("Clicking on Save button");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        // Scroll to element
         js.executeScript("arguments[0].scrollIntoView({block: 'center'});", saveButton);
 
-        // Wait until visible
         wait.until(ExpectedConditions.visibilityOf(saveButton));
 
-        // Small wait for overlay animation (optional but useful)
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log.error("Interrupted while clicking Save", e);
         }
 
-        // Click using JavaScript
         js.executeScript("arguments[0].click();", saveButton);
     }
-    
+
     public void forceScrollToElement() {
+        log.info("Scrolling to Email section");
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", emailsection);
+    }
 
-    	 JavascriptExecutor js = (JavascriptExecutor) driver;
-         js.executeScript("arguments[0].scrollIntoView(true);", emailsection);
-     }
-    
-    
-    
     public void clickonpreview() {
-    	
-    	wait.until(ExpectedConditions.elementToBeClickable(previewandedit)).click();;
+        log.info("Clicking on Preview button");
+        wait.until(ExpectedConditions.elementToBeClickable(previewandedit)).click();
     }
-    
-    
-    // ✅ Scroll to Hybrid Toggle
+
     public void clickoninserttoken() {
-    	
-    	wait.until(ExpectedConditions.elementToBeClickable(inserttoken)).click();;
+        log.info("Clicking on Insert Token");
+        wait.until(ExpectedConditions.elementToBeClickable(inserttoken)).click();
     }
-    
-    
-    public void scrollToToken(WebElement token) {
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        js.executeScript(
-            "arguments[0].scrollIntoView({block:'center'});",
-            token
-        );
-
-        wait.until(ExpectedConditions.visibilityOf(token));
-    }
-    
     public void addEmailTokens() {
+        log.info("Adding Email Tokens");
 
         wait.until(ExpectedConditions.visibilityOf(checkInQRToken));
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        // Scroll & click QR token
         js.executeScript("arguments[0].scrollIntoView({block:'center'});", checkInQRToken);
         checkInQRToken.click();
 
-        // If dropdown closes, reopen it
         clickoninserttoken();
 
         wait.until(ExpectedConditions.visibilityOf(checkInBadgeToken));
 
         js.executeScript("arguments[0].scrollIntoView({block:'center'});", checkInBadgeToken);
         checkInBadgeToken.click();
+
+        log.info("Email tokens added successfully");
     }
-    
+
     public void clickonsavebutton() {
-    	  JavascriptExecutor js = (JavascriptExecutor) driver;
+        log.info("Clicking on Save button (Email section)");
 
-          // Scroll to element
-          js.executeScript("arguments[0].scrollIntoView({block: 'center'});", savebtn);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", savebtn);
 
-          // Wait until visible
-          wait.until(ExpectedConditions.visibilityOf(savebtn));
+        wait.until(ExpectedConditions.visibilityOf(savebtn));
 
-          // Small wait for overlay animation (optional but useful)
-          try {
-              Thread.sleep(500);
-          } catch (InterruptedException e) {
-              e.printStackTrace();
-          }
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            log.error("Interrupted while clicking save button", e);
+        }
 
-          // Click using JavaScript
-          js.executeScript("arguments[0].click();", savebtn);
-      }
-    public void clickonclosebutton() {
-    	 wait.until(ExpectedConditions.elementToBeClickable(close)).click();
-    
-    
+        js.executeScript("arguments[0].click();", savebtn);
     }
+
+    public void clickonclosebutton() {
+        log.info("Clicking on Close button");
+        wait.until(ExpectedConditions.elementToBeClickable(close)).click();
+    }
+
     public void clickonyesbutton() {
-   	 wait.until(ExpectedConditions.elementToBeClickable(yesbtn)).click();
-   
-   
-   }
-    
-   public void verifyattendeetype() {
-	   
-		 JavascriptExecutor js = (JavascriptExecutor) driver;
-         js.executeScript("arguments[0].scrollIntoView(true);", Attendee_type);
-     }
-   
-   public void click_on_link_embed() {
-	   
-		 wait.until(ExpectedConditions.elementToBeClickable(Link_and_Embed)).click();     
-   }
-   
-   public void click_on_audience_link() {
-	   
-	   wait.until(ExpectedConditions.elementToBeClickable(Audience_Link)).click();  
-   
-   }
-   
-  
+        log.info("Clicking on Yes button");
+        wait.until(ExpectedConditions.elementToBeClickable(yesbtn)).click();
+    }
 
-	public void user_enter_first_name(String firs_tname) {
-		 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    public void verifyattendeetype() {
+        log.info("Scrolling to Attendee Type section");
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Attendee_type);
+    }
 
-		wait.until(ExpectedConditions.elementToBeClickable(firstname));
+    public void click_on_link_embed() {
+        log.info("Clicking on Link and Embed");
+        wait.until(ExpectedConditions.elementToBeClickable(Link_and_Embed)).click();
+    }
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", firstname);
+    public void click_on_audience_link() {
+        log.info("Clicking on Audience Link");
+        wait.until(ExpectedConditions.elementToBeClickable(Audience_Link)).click();
+    }
 
-		firstname.clear();
-		firstname.sendKeys(firs_tname);
-		
-		
-		
-		   
-	}
+    public void user_enter_first_name(String firstnameVal) {
+        log.info("Entering First Name: {}", firstnameVal);
 
-	public void enter_last_name(String last_name) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		wait.until(ExpectedConditions.visibilityOf(lastname)).sendKeys(last_name);
-	
-	    
-	}
-	public void enter_emaile(String email) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		wait.until(ExpectedConditions.visibilityOf(emailid)).sendKeys(email);
-		
-	
-	    
-	}
+        wait.until(ExpectedConditions.elementToBeClickable(firstname));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstname);
 
-	public void enter_company(String company) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		wait.until(ExpectedConditions.visibilityOf(companyname)).sendKeys(company);
-	
-	    
-	}
+        firstname.clear();
+        firstname.sendKeys(firstnameVal);
+    }
 
+    public void enter_last_name(String lastName) {
+        log.info("Entering Last Name: {}", lastName);
+        wait.until(ExpectedConditions.visibilityOf(lastname)).sendKeys(lastName);
+    }
 
-	public void select_inperson(String inperson) {
+    public void enter_emaile(String email) {
+        log.info("Entering Email");
+        wait.until(ExpectedConditions.visibilityOf(emailid)).sendKeys(email);
+    }
 
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    public void enter_company(String company) {
+        log.info("Entering Company: {}", company);
+        wait.until(ExpectedConditions.visibilityOf(companyname)).sendKeys(company);
+    }
 
-	    wait.until(ExpectedConditions.elementToBeClickable(In_Person));
+    public void select_inperson(String type) {
+        log.info("Selecting In-Person attendee type");
 
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].scrollIntoView(true);", In_Person);
+        wait.until(ExpectedConditions.elementToBeClickable(In_Person));
 
-	    js.executeScript("arguments[0].click();", In_Person);
-	}
-	public void click_register_button() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", In_Person);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", In_Person);
+    }
 
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    public void click_register_button() {
+        log.info("Clicking on Register button");
 
-	    wait.until(ExpectedConditions.elementToBeClickable(registerButton));
+        wait.until(ExpectedConditions.elementToBeClickable(registerButton));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", registerButton);
 
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].scrollIntoView(true);", registerButton);
-
-	    registerButton.click();
-	}
-	    
-	}
-
-
-	
-   
-   
-
-
-
-    
-    
-   
+        registerButton.click();
+    }
+}

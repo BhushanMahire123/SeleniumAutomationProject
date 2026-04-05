@@ -1,0 +1,69 @@
+2026-04-05 22:40:54 - Initializing Chrome Browser...
+2026-04-05 22:41:00 - Wrapping driver with Healenium Self-Healing Driver
+2026-04-05 22:41:01 - Browser maximized
+2026-04-05 22:41:01 - Implicit wait set to 30 seconds
+2026-04-05 22:43:15 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-05 22:43:28 - Initializing Chrome Browser...
+2026-04-05 22:43:31 - Wrapping driver with Healenium Self-Healing Driver
+2026-04-05 22:43:32 - Browser maximized
+2026-04-05 22:43:32 - Implicit wait set to 30 seconds
+2026-04-05 22:46:23 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-05 22:46:32 - Clicking on Create button
+2026-04-05 22:46:37 - Entering Event Title: automation
+2026-04-05 22:47:06 - Selecting Date: 01/01/2040
+2026-04-05 22:47:06 - Scrolling to Hybrid section
+2026-04-05 22:47:07 - Clicking on Hybrid toggle
+2026-04-05 22:47:07 - Verifying Venue field visibility
+2026-04-05 22:47:07 - Verifying Address field visibility
+2026-04-05 22:47:07 - Entering Venue: Professional colony
+2026-04-05 22:47:07 - Entering Address
+2026-04-05 22:47:07 - Clicking on Save button
+2026-04-05 22:47:39 - Scrolling to Hybrid section
+2026-04-05 22:47:39 - Verifying Venue field visibility
+2026-04-05 22:47:39 - Verifying Address field visibility
+2026-04-05 22:47:44 - Scrolling to Email section
+2026-04-05 22:47:49 - Clicking on Preview button
+2026-04-05 22:47:54 - Clicking on Insert Token
+2026-04-05 22:48:00 - Adding Email Tokens
+2026-04-05 22:48:00 - Clicking on Insert Token
+2026-04-05 22:48:00 - Email tokens added successfully
+2026-04-05 22:48:05 - Clicking on Save button (Email section)
+2026-04-05 22:48:11 - Clicking on Close button
+2026-04-05 22:48:16 - Clicking on Yes button
+2026-04-05 22:48:27 - Scrolling to Attendee Type section
+2026-04-05 22:48:34 - Clicking on Link and Embed
+2026-04-05 22:48:39 - Clicking on Audience Link
+2026-04-05 22:48:44 - Entering First Name: Bhushan
+2026-04-05 22:48:51 - Entering Last Name: Mahire
+2026-04-05 22:48:52 - Entering Email
+2026-04-05 22:48:52 - Entering Company: Lms
+2026-04-05 22:48:52 - Selecting In-Person attendee type
+2026-04-05 22:48:52 - Clicking on Register button
+2026-04-05 22:52:14 - Initializing Chrome Browser...
+2026-04-05 22:52:17 - Wrapping driver with Healenium Self-Healing Driver
+2026-04-05 22:52:18 - Browser maximized
+2026-04-05 22:52:18 - Implicit wait set to 30 seconds
+2026-04-05 22:54:18 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-05 22:54:26 - Clicking on Create button
+2026-04-05 22:54:29 - Entering Event Title: automation
+2026-04-05 22:54:50 - Selecting Date: 01/01/2040
+2026-04-05 22:54:51 - Scrolling to Hybrid section
+2026-04-05 22:54:51 - Clicking on Hybrid toggle
+2026-04-05 22:54:51 - Verifying Venue field visibility
+2026-04-05 22:54:52 - Verifying Address field visibility
+2026-04-05 22:54:52 - Entering Venue: Professional colony
+2026-04-05 22:54:52 - Entering Address
+2026-04-05 22:54:52 - Clicking on Save button
+2026-04-05 22:55:13 - Scrolling to Hybrid section
+2026-04-05 22:55:13 - Verifying Venue field visibility
+2026-04-05 22:55:13 - Verifying Address field visibility
+2026-04-05 22:55:18 - Scrolling to Email section
+2026-04-05 22:55:23 - Clicking on Preview button
+2026-04-05 22:55:29 - Clicking on Insert Token
+2026-04-05 22:55:34 - Adding Email Tokens
+2026-04-05 22:55:34 - Clicking on Insert Token
+2026-04-05 22:55:35 - Email tokens added successfully
+2026-04-05 22:55:40 - Clicking on Save button (Email section)
+2026-04-05 22:55:46 - Clicking on Close button
+2026-04-05 22:55:51 - Clicking on Yes button
+2026-04-05 22:56:01 - Scrolling to Attendee Type section
