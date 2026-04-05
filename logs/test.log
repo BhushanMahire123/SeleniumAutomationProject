@@ -67,3 +67,42 @@
 2026-04-05 22:55:46 - Clicking on Close button
 2026-04-05 22:55:51 - Clicking on Yes button
 2026-04-05 22:56:01 - Scrolling to Attendee Type section
+2026-04-05 23:53:55 - Initializing Chrome Browser...
+2026-04-05 23:54:04 - Browser maximized
+2026-04-05 23:54:04 - Implicit wait set to 30 seconds
+2026-04-05 23:54:09 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-05 23:55:46 - Initializing Chrome Browser...
+2026-04-05 23:55:51 - Browser maximized
+2026-04-05 23:55:51 - Implicit wait set to 30 seconds
+2026-04-05 23:58:01 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-05 23:58:08 - Clicking on Create button
+2026-04-05 23:58:10 - Entering Event Title: automation
+2026-04-05 23:58:27 - Selecting Date: 01/01/2040
+2026-04-05 23:58:28 - Scrolling to Hybrid section
+2026-04-05 23:58:28 - Clicking on Hybrid toggle
+2026-04-05 23:58:28 - Verifying Venue field visibility
+2026-04-05 23:58:28 - Verifying Address field visibility
+2026-04-05 23:58:28 - Entering Venue: Professional colony
+2026-04-05 23:58:28 - Entering Address
+2026-04-05 23:58:29 - Clicking on Save button
+2026-04-05 23:59:00 - Scrolling to Hybrid section
+2026-04-05 23:59:00 - Verifying Venue field visibility
+2026-04-05 23:59:00 - Verifying Address field visibility
+2026-04-05 23:59:05 - Scrolling to Email section
+2026-04-05 23:59:10 - Clicking on Preview button
+2026-04-05 23:59:16 - Clicking on Insert Token
+2026-04-05 23:59:21 - Adding Email Tokens
+2026-04-05 23:59:21 - Clicking on Insert Token
+2026-04-05 23:59:22 - Email tokens added successfully
+2026-04-05 23:59:27 - Clicking on Save button (Email section)
+2026-04-05 23:59:33 - Clicking on Close button
+2026-04-05 23:59:38 - Clicking on Yes button
+2026-04-05 23:59:48 - Scrolling to Attendee Type section
+2026-04-05 23:59:59 - Clicking on Link and Embed
+2026-04-06 00:00:05 - Clicking on Audience Link
+2026-04-06 00:00:10 - Entering First Name: Bhushan
+2026-04-06 00:00:19 - Entering Last Name: Mahire
+2026-04-06 00:00:19 - Entering Email
+2026-04-06 00:00:19 - Entering Company: Lms
+2026-04-06 00:00:20 - Selecting In-Person attendee type
+2026-04-06 00:00:20 - Clicking on Register button

@@ -4,9 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/login.feature",
+        features = "src/test/resources",
         glue = "project2.stepDefinitions",
-        tags = "@Hybrid",
         plugin = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber.html",
@@ -17,7 +16,6 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 }
-
 
 
 

@@ -29,30 +29,26 @@ public class BaseClass {
 	public static Logger log = LogManager.getLogger(BaseClass.class);
     
     // ✅ Driver Initialize with Healenium
-    public static void initializeDriver() {
-    	
+	public static void initializeDriver() {
 
-        log.info("Initializing Chrome Browser...");
+	    log.info("Initializing Chrome Browser...");
 
-        WebDriver delegate = new ChromeDriver();
+	    // ✅ Normal Selenium Driver (No Healenium)
+	    driver = new ChromeDriver();
 
-        log.info("Wrapping driver with Healenium Self-Healing Driver");
-        driver = SelfHealingDriver.create(delegate);
+	    driver.manage().window().maximize();
+	    log.info("Browser maximized");
 
-        driver.manage().window().maximize();
-        log.info("Browser maximized");
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	    log.info("Implicit wait set to 30 seconds");
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        log.info("Implicit wait set to 30 seconds");
+	    String url = ConfigReader.getProperty("url");
+	    driver.get(url);
 
-        String url = ConfigReader.getProperty("url");
-        driver.get(url);
+	    log.info("Navigated to URL: " + url);
 
-        log.info("Navigated to URL: " + url);
-
-        lp = new Login_Page(driver);
-    }
- 
+	    lp = new Login_Page(driver);
+	}
     // ✅ Screenshot Method (No Change)
     public static String captureScreenshot(String testName) {
 
