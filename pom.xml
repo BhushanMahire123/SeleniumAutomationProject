@@ -39,7 +39,7 @@
             <version>2.11.0</version>
         </dependency>
 
-        <!-- WebDriverManager (ONLY ONE) -->
+        <!-- WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -95,7 +95,7 @@
 
     </dependencies>
 
-    <!-- 🔥 MOST IMPORTANT (Fix for Jenkins) -->
+    <!-- 🔥 FINAL FIX FOR JENKINS -->
     <build>
         <plugins>
             <plugin>
@@ -103,9 +103,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <includes>
-                        <include>**/TestRunner.java</include>
-                    </includes>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>

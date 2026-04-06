@@ -4,34 +4,23 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources",
+        features = "src/test/resources/features",
         glue = "project2.stepDefinitions",
 
         plugin = {
-                "pretty",   // ✅ Console में step-by-step logs दिखाएगा
+                "pretty",
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json",
-                "junit:target/cucumber-reports/cucumber.xml" // ✅ Jenkins integration के लिए
+                "junit:target/cucumber-reports/cucumber.xml"
         },
 
-        monochrome = true,     // ✅ clean readable console output
-        publish = true,        // ✅ online cucumber report link (optional)
-        dryRun = false,        // ✅ false = execution, true = सिर्फ step check
-
-        tags = ""              // ✅ future में tag execution के लिए
+        monochrome = true,
+        publish = true,
+        tags = ""   // 🔥 IMPORTANT (empty छोड़ो)
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
-
-    // 👉 Parallel execution (optional future use)
-    // @Override
-    // @DataProvider(parallel = true)
-    // public Object[][] scenarios() {
-    //     return super.scenarios();
-    // }
 }
-
-
 
 
 
