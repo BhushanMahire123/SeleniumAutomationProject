@@ -1,22 +1,19 @@
 package project2.stepDefinitions;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import com.epam.healenium.SelfHealingDriver;  // ✅ Healenium import
 import Page_Object.Login_Page;
 import Page_Object.Reset_Password;
-
 import utils.ConfigReader;
 
 public class BaseClass {
@@ -28,7 +25,6 @@ public class BaseClass {
 
 	public static Logger log = LogManager.getLogger(BaseClass.class);
     
-    // ✅ Driver Initialize with Healenium
 	public static void initializeDriver() {
 
 	    log.info("Initializing Chrome Browser...");
