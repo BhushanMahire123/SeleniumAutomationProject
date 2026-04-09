@@ -211,3 +211,38 @@
 2026-04-07 20:59:41 - Entering Company: Lms
 2026-04-07 20:59:41 - Selecting In-Person attendee type
 2026-04-07 20:59:41 - Clicking on Register button
+2026-04-09 19:13:29 - Initializing Chrome Browser...
+2026-04-09 19:15:00 - Browser maximized
+2026-04-09 19:15:00 - Implicit wait set to 30 seconds
+2026-04-09 19:15:13 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-09 19:15:20 - Clicking on Create button
+2026-04-09 19:15:23 - Entering Event Title: automation
+2026-04-09 19:15:36 - Selecting Date: 01/01/2040
+2026-04-09 19:15:37 - Scrolling to Hybrid section
+2026-04-09 19:15:37 - Clicking on Hybrid toggle
+2026-04-09 19:15:37 - Verifying Venue field visibility
+2026-04-09 19:15:37 - Verifying Address field visibility
+2026-04-09 19:15:37 - Entering Venue: Professional colony
+2026-04-09 19:15:38 - Entering Address
+2026-04-09 19:15:38 - Clicking on Save button
+2026-04-09 19:15:59 - Scrolling to Hybrid section
+2026-04-09 19:15:59 - Verifying Venue field visibility
+2026-04-09 19:15:59 - Verifying Address field visibility
+2026-04-09 19:16:04 - Scrolling to Email section
+2026-04-09 19:16:09 - Clicking on Preview button
+2026-04-09 19:16:14 - Clicking on Insert Token
+2026-04-09 19:16:20 - Adding Email Tokens
+2026-04-09 19:16:20 - Clicking on Insert Token
+2026-04-09 19:16:20 - Email tokens added successfully
+2026-04-09 19:16:25 - Clicking on Save button (Email section)
+2026-04-09 19:16:31 - Clicking on Close button
+2026-04-09 19:16:36 - Clicking on Yes button
+2026-04-09 19:16:47 - Scrolling to Attendee Type section
+2026-04-09 19:16:53 - Clicking on Link and Embed
+2026-04-09 19:16:58 - Clicking on Audience Link
+2026-04-09 19:17:03 - Entering First Name: Bhushan
+2026-04-09 19:17:08 - Entering Last Name: Mahire
+2026-04-09 19:17:08 - Entering Email
+2026-04-09 19:17:08 - Entering Company: Lms
+2026-04-09 19:17:09 - Selecting In-Person attendee type
+2026-04-09 19:17:09 - Clicking on Register button

@@ -127,7 +127,8 @@ Examples:
 
 
 
-@Hybrid
+@Hybrid 
+@testKey=APT-2
 Scenario Outline: hybrid flow 
 when User opens URL "<urlKey>"
 And User enters Email as "<usernameKey>" and Password as "<passwordKey>"
