@@ -128,7 +128,6 @@ Examples:
 
 
 @Hybrid 
-@APT-2
 Scenario Outline: hybrid flow 
 when User opens URL "<urlKey>"
 And User enters Email as "<usernameKey>" and Password as "<passwordKey>"
@@ -202,6 +201,7 @@ And User clicks on Reg Tab
 
 
 @Tutorial
+@APT-2
  Scenario Outline: User Registration
 
   when User opens URL "<urlKey>"
