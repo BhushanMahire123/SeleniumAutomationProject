@@ -13,12 +13,13 @@ import io.cucumber.testng.CucumberOptions;
                 "junit:target/cucumber-reports/cucumber.xml"
         },
         monochrome = true,
-        publish = true
+        publish = true,
+        tags = "@Tutorial"
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
-}
-
+} 
+   
 
 
 

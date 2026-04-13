@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="125.987" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Hybrid High Priority flow" name="hybrid flow - Example #1.1" time="125.516">
+<testsuite name="Cucumber" time="11.26" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Hybrid High Priority flow" name="User Registration - Example #1.1" time="10.76">
 <system-out><![CDATA[
-And User enters Email as "usernameKeyInPropFile" and Password as "passwordKeyInPropFile".passed
-And Click on Login..........................................................passed
-And user wait additional 10 sec.............................................passed
-And user click on create button.............................................passed
-And user enter event title "eventtitleInPropFile"...........................passed
-And user select date from date picker "dateInPropFile"......................passed
-And user scroll to Hybrid section...........................................passed
-And user clicks on Hybrid toggle............................................passed
-Then Venue and Address fields should be visible.............................passed
-And user enters venue "venueNameInPropFile".................................passed
-And user enters address "venueAddressInPropFile"............................passed
-And user clicks on Save button..............................................passed
-Then User can see overview page title "Overview"............................passed
-And user scroll to email section............................................passed
-And user click on preview...................................................passed
-And user click on insert token..............................................passed
-And user adds email tokens..................................................passed
-And user clicks on Save btn.................................................passed
-And user clicks on close btn................................................passed
-And user clicks on yes btn..................................................passed
-And User clicks on Reg Tab..................................................passed
-And user scroll to Attendee_type section....................................passed
-And user clicks on link and embed  btn......................................passed
-And user clicks on Audience Link btn........................................passed
-And user enter first name "FirstnameInPropFile".............................passed
-And user enter last name "LastnameInPropFile"...............................passed
-And user enter email name "EmailInPropFile".................................passed
-And user enter company name "CompanyInPropFile".............................passed
-And user select inperson "InPropFile_Attendee_Type".........................passed
-And user clicks on register button..........................................passed
+And user enter f name "firstInPropFile".....................................passed
+And user enter l name "lastInPropFile"......................................passed
+And user enter mail "mailInPropFile"........................................passed
+And user enter telephone "teleInPropFile"...................................passed
+And user enter pass "passInPropFile"........................................passed
+And user enter conf password "confPasswordInPropFile".......................passed
+And user accept privacy policy..............................................passed
+And user clicks on continue button..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

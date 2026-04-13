@@ -136,7 +136,7 @@ And Click on Login
 And user wait additional 10 sec
 And user click on create button
 And user enter event title "<title>"
-And user select date from date picker "<date>"
+And user select date from date picker "<date>"           
 And user scroll to Hybrid section
 And user clicks on Hybrid toggle
 Then Venue and Address fields should be visible
@@ -199,5 +199,38 @@ And User clicks on Reg Tab
  Examples:
       | urlKey | usernameKey             | passwordKey             | eventid     |
       | url    | usernameKeyInPropFile   | passwordKeyInPropFile   | eventidKey  |
+
+
+@Tutorial
+ Scenario Outline: User Registration
+
+  when User opens URL "<urlKey>"
+  And user enter f name "<firstnameKey>"
+  And user enter l name "<lastnameKey>"
+  And user enter mail "<emailKey>"
+  And user enter telephone "<telephoneKey>"
+  And user enter pass "<passwordKey>"
+  And user enter conf password "<confirmPasswordKey>"
+  #And user select newsletter yes
+  And user accept privacy policy
+  And user clicks on continue button
+
+Examples:
+  | urlKey | firstnameKey           | lastnameKey | emailKey | telephoneKey | passwordKey | confirmPasswordKey |
+  | url    | firstInPropFile    | lastInPropFile    | mailInPropFile    | teleInPropFile    | passInPropFile    | confPasswordInPropFile    |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

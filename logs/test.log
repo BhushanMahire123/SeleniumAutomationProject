@@ -246,3 +246,125 @@
 2026-04-09 19:17:08 - Entering Company: Lms
 2026-04-09 19:17:09 - Selecting In-Person attendee type
 2026-04-09 19:17:09 - Clicking on Register button
+2026-04-10 20:48:44 - Initializing Chrome Browser...
+2026-04-10 20:50:55 - Initializing Chrome Browser...
+2026-04-10 20:51:02 - Browser maximized
+2026-04-10 20:51:02 - Implicit wait set to 30 seconds
+2026-04-10 20:52:33 - Initializing Chrome Browser...
+2026-04-10 20:52:36 - Browser maximized
+2026-04-10 20:52:36 - Implicit wait set to 30 seconds
+2026-04-10 20:52:45 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-10 20:52:54 - Clicking on Create button
+2026-04-10 20:57:56 - Initializing Chrome Browser...
+2026-04-10 20:58:01 - Browser maximized
+2026-04-10 20:58:01 - Implicit wait set to 30 seconds
+2026-04-10 20:58:18 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-10 20:58:25 - Clicking on Create button
+2026-04-10 21:04:22 - Initializing Chrome Browser...
+2026-04-11 13:01:29 - Initializing Chrome Browser...
+2026-04-11 13:01:37 - Browser maximized
+2026-04-11 13:01:37 - Implicit wait set to 30 seconds
+2026-04-11 13:01:52 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-11 13:02:02 - Clicking on Create button
+2026-04-11 13:12:51 - Initializing Chrome Browser...
+2026-04-11 13:12:55 - Browser maximized
+2026-04-11 13:12:55 - Implicit wait set to 30 seconds
+2026-04-11 13:13:04 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-11 13:13:10 - Clicking on Create button
+2026-04-11 13:13:11 - Entering Event Title: automation
+2026-04-11 13:13:17 - Selecting Date: 01/01/2040
+2026-04-11 13:13:18 - Scrolling to Hybrid section
+2026-04-11 13:13:18 - Clicking on Hybrid toggle
+2026-04-11 13:13:18 - Verifying Venue field visibility
+2026-04-11 13:13:18 - Verifying Address field visibility
+2026-04-11 13:13:19 - Entering Venue: Professional colony
+2026-04-11 13:13:19 - Entering Address
+2026-04-11 13:13:19 - Clicking on Save button
+2026-04-11 13:13:41 - Scrolling to Hybrid section
+2026-04-11 13:13:41 - Verifying Venue field visibility
+2026-04-11 13:13:41 - Verifying Address field visibility
+2026-04-11 13:13:46 - Scrolling to Email section
+2026-04-11 13:13:51 - Clicking on Preview button
+2026-04-11 13:13:56 - Clicking on Insert Token
+2026-04-11 13:14:02 - Adding Email Tokens
+2026-04-11 13:14:02 - Clicking on Insert Token
+2026-04-11 13:14:02 - Email tokens added successfully
+2026-04-11 13:14:07 - Clicking on Save button (Email section)
+2026-04-11 13:14:13 - Clicking on Close button
+2026-04-11 13:14:18 - Clicking on Yes button
+2026-04-11 13:14:29 - Scrolling to Attendee Type section
+2026-04-11 13:14:35 - Clicking on Link and Embed
+2026-04-11 13:14:40 - Clicking on Audience Link
+2026-04-11 13:14:45 - Entering First Name: Bhushan
+2026-04-11 13:14:52 - Entering Last Name: Mahire
+2026-04-11 13:14:52 - Entering Email
+2026-04-11 13:14:52 - Entering Company: Lms
+2026-04-11 13:14:52 - Selecting In-Person attendee type
+2026-04-11 13:14:52 - Clicking on Register button
+2026-04-11 20:24:41 - Initializing Chrome Browser...
+2026-04-11 20:24:49 - Browser maximized
+2026-04-11 20:24:49 - Implicit wait set to 30 seconds
+2026-04-11 20:24:51 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-11 20:25:33 - Initializing Chrome Browser...
+2026-04-11 20:25:37 - Browser maximized
+2026-04-11 20:25:37 - Implicit wait set to 30 seconds
+2026-04-11 20:25:48 - Navigated to URL: https://wccqa.on24.com/webcast/login
+2026-04-11 20:25:55 - Clicking on Create button
+2026-04-11 20:25:57 - Entering Event Title: automation
+2026-04-11 20:26:08 - Selecting Date: 01/01/2040
+2026-04-11 20:26:08 - Scrolling to Hybrid section
+2026-04-11 20:26:08 - Clicking on Hybrid toggle
+2026-04-11 20:26:09 - Verifying Venue field visibility
+2026-04-11 20:26:09 - Verifying Address field visibility
+2026-04-11 20:26:09 - Entering Venue: Professional colony
+2026-04-11 20:26:09 - Entering Address
+2026-04-11 20:26:09 - Clicking on Save button
+2026-04-11 20:26:35 - Scrolling to Hybrid section
+2026-04-11 20:26:35 - Verifying Venue field visibility
+2026-04-11 20:26:35 - Verifying Address field visibility
+2026-04-11 20:26:40 - Scrolling to Email section
+2026-04-11 20:26:45 - Clicking on Preview button
+2026-04-11 20:26:50 - Clicking on Insert Token
+2026-04-11 20:26:55 - Adding Email Tokens
+2026-04-11 20:26:55 - Clicking on Insert Token
+2026-04-11 20:26:56 - Email tokens added successfully
+2026-04-11 20:27:01 - Clicking on Save button (Email section)
+2026-04-11 20:27:07 - Clicking on Close button
+2026-04-11 20:27:12 - Clicking on Yes button
+2026-04-11 20:27:22 - Scrolling to Attendee Type section
+2026-04-11 20:27:27 - Clicking on Link and Embed
+2026-04-11 20:27:33 - Clicking on Audience Link
+2026-04-11 20:27:38 - Entering First Name: Bhushan
+2026-04-11 20:27:40 - Entering Last Name: Mahire
+2026-04-11 20:27:40 - Entering Email
+2026-04-11 20:27:40 - Entering Company: Lms
+2026-04-11 20:27:40 - Selecting In-Person attendee type
+2026-04-11 20:27:41 - Clicking on Register button
+2026-04-13 11:54:08 - Initializing Chrome Browser...
+2026-04-13 11:54:34 - Browser maximized
+2026-04-13 11:54:34 - Implicit wait set to 30 seconds
+2026-04-13 11:54:37 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register
+2026-04-13 11:56:51 - Initializing Chrome Browser...
+2026-04-13 11:56:54 - Browser maximized
+2026-04-13 11:56:54 - Implicit wait set to 30 seconds
+2026-04-13 11:56:59 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register
+2026-04-13 12:00:34 - Initializing Chrome Browser...
+2026-04-13 12:00:39 - Browser maximized
+2026-04-13 12:00:39 - Implicit wait set to 30 seconds
+2026-04-13 12:00:43 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register
+2026-04-13 12:02:09 - Initializing Chrome Browser...
+2026-04-13 12:02:12 - Browser maximized
+2026-04-13 12:02:12 - Implicit wait set to 30 seconds
+2026-04-13 12:02:15 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register
+2026-04-13 12:04:27 - Initializing Chrome Browser...
+2026-04-13 12:04:31 - Browser maximized
+2026-04-13 12:04:31 - Implicit wait set to 30 seconds
+2026-04-13 12:04:33 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register
+2026-04-13 12:07:14 - Initializing Chrome Browser...
+2026-04-13 12:07:18 - Browser maximized
+2026-04-13 12:07:18 - Implicit wait set to 30 seconds
+2026-04-13 12:07:27 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register
+2026-04-13 12:08:20 - Initializing Chrome Browser...
+2026-04-13 12:08:23 - Browser maximized
+2026-04-13 12:08:23 - Implicit wait set to 30 seconds
+2026-04-13 12:08:27 - Navigated to URL: https://tutorialsninja.com/demo/index.php?route=account/register

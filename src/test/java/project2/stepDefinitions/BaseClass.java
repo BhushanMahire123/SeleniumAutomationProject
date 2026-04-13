@@ -29,7 +29,6 @@ public class BaseClass {
 
 	    log.info("Initializing Chrome Browser...");
 
-	    // ✅ Normal Selenium Driver (No Healenium)
 	    driver = new ChromeDriver();
 
 	    driver.manage().window().maximize();
