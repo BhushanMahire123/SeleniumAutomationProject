@@ -205,6 +205,7 @@ And User clicks on Reg Tab
  Scenario Outline: User Registration
 
   when User opens URL "<urlKey>"
+  And user wait additional 10 sec
   And user enter f name "<firstnameKey>"
   And user enter l name "<lastnameKey>"
   And user enter mail "<emailKey>"
