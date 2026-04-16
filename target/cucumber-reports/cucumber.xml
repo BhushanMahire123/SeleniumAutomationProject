@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.26" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Hybrid High Priority flow" name="User Registration - Example #1.1" time="10.76">
+<testsuite name="Cucumber" time="12.487" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Hybrid High Priority flow" name="Login Test - Example #1.1" time="11.664">
 <system-out><![CDATA[
-And user enter f name "firstInPropFile".....................................passed
-And user enter l name "lastInPropFile"......................................passed
-And user enter mail "mailInPropFile"........................................passed
-And user enter telephone "teleInPropFile"...................................passed
-And user enter pass "passInPropFile"........................................passed
-And user enter conf password "confPasswordInPropFile".......................passed
-And user accept privacy policy..............................................passed
-And user clicks on continue button..........................................passed
+And user enter username name "usernameInPropFile"...........................passed
+And user enter password "PasswordtnPropFile"................................passed
+And user click on submit button.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

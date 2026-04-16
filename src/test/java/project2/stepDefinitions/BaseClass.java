@@ -14,20 +14,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import Page_Object.Login_Page;
 import Page_Object.Reset_Password;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.ConfigReader;
 
 public class BaseClass {
-
+	 
+	    public static Login_Page lp;
+	    public static Reset_Password RP;
+	    public static Reset_Password LPE;
     public static WebDriver driver;
-    public static Login_Page lp;
-    public static Reset_Password RP;
-    public static Reset_Password LPE;
+   
 
 	public static Logger log = LogManager.getLogger(BaseClass.class);
     
 	public static void initializeDriver() {
-
 	    log.info("Initializing Chrome Browser...");
+
+	    WebDriverManager.chromedriver().setup();
 
 	    driver = new ChromeDriver();
 
@@ -39,11 +42,11 @@ public class BaseClass {
 
 	    String url = ConfigReader.getProperty("url");
 	    driver.get(url);
-
-	    log.info("Navigated to URL: " + url);
-
-	    lp = new Login_Page(driver);
+	    log.info("Navigated to URL: " + url);   // ✅ yahi hona chahiye
 	}
+
+	  
+	
     // ✅ Screenshot Method (No Change)
     public static String captureScreenshot(String testName) {
 
