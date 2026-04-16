@@ -223,6 +223,7 @@ Examples:
 
 
 @practice
+@APT-18
 Scenario Outline: Login Test
 
   And user enter username name "<usernameKey>"
