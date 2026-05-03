@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
         },
         monochrome = true,
         publish = true,
-        tags = "@practice"
+        tags = "@APT-18"
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {

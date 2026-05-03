@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.18" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Hybrid High Priority flow" name="Login Test - Example #1.1" time="9.751">
+<testsuite name="Cucumber" time="11.826" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Hybrid High Priority flow" name="Login Test - Example #1.1" time="11.48">
 <system-out><![CDATA[
 And user enter username name "usernameInPropFile"...........................passed
 And user enter password "PasswordtnPropFile"................................passed

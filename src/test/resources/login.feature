@@ -222,7 +222,7 @@ Examples:
 
 
 
-@practice
+
 @APT-18
 Scenario Outline: Login Test
 
