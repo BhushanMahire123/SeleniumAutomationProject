@@ -18,7 +18,7 @@ public class Hooks {
     @Before
     public void setUp(Scenario scenario) {
 
-        BaseClass.initializeDriver();
+        BaseClass.initializeDriver(); //initialise browser
 
         ExtentTest test = extent.createTest(scenario.getName());
         extentTest.set(test);
