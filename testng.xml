@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Cucumber Suite" verbose="1">
+
+    <!-- APT-18 FIRST -->
+    <test name="APT-18 Execution">
+        <classes>
+            <class name="runner.TestRunnerAPT18"/>
+        </classes>
+    </test>
+
+    <!-- APT-19 SECOND -->
+    <test name="APT-19 Execution">
+        <classes>
+            <class name="runner.TestRunnerAPT19"/>
+        </classes>
+    </test>
+
+</suite>

@@ -10,14 +10,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class tutorialsninjas extends BasePage {
+public class tutorialsninjaslogin extends BasePage {
 
 	  WebDriver driver;
 	    WebDriverWait wait;
 
-	    private static final Logger log = LogManager.getLogger(tutorialsninjas.class);
+	    private static final Logger log = LogManager.getLogger(tutorialsninjaslogin.class);
 
-	    public tutorialsninjas(WebDriver driver) {
+	    public tutorialsninjaslogin(WebDriver driver) {
 	        super(driver);
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);

@@ -23,6 +23,7 @@ public class BaseClass {
 	public static Logger log = LogManager.getLogger(BaseClass.class);
     
 	public static void initializeDriver() {
+
 	    log.info("Initializing Chrome Browser...");
 
 	    WebDriverManager.chromedriver().setup();
@@ -30,14 +31,8 @@ public class BaseClass {
 	    driver = new ChromeDriver();
 
 	    driver.manage().window().maximize();
-	    log.info("Browser maximized");
 
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-	    log.info("Implicit wait set to 30 seconds");
-
-	    String url = ConfigReader.getProperty("url");
-	    driver.get(url);
-	    log.info("Navigated to URL: " + url);   // ✅ yahi hona chahiye
 	}
 
 	  
