@@ -3,18 +3,18 @@ package project2.stepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentTest;
-import Page_Object.practicetestautomationobject;
+import Page_Object.tutorialsninjas;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import utils.ConfigReader;
 
-public class practicetestautomationTest {
-	practicetestautomationobject practicetestautomation;
+public class tutorialsninjas_Test {
+	tutorialsninjas practicetestautomation;
     
 	ExtentTest test;
-	    public practicetestautomationTest() {
+	    public tutorialsninjas_Test() {
 	        WebDriver driver = Hooks.getDriver();
-	        practicetestautomation = new 	practicetestautomationobject(driver);
+	        practicetestautomation = new 	tutorialsninjas(driver);
 	    }
 
 	    @Before

@@ -10,28 +10,28 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class practicetestautomationobject extends BasePage {
+public class tutorialsninjas extends BasePage {
 
 	  WebDriver driver;
 	    WebDriverWait wait;
 
-	    private static final Logger log = LogManager.getLogger(practicetestautomationobject.class);
+	    private static final Logger log = LogManager.getLogger(tutorialsninjas.class);
 
-	    public practicetestautomationobject(WebDriver driver) {
+	    public tutorialsninjas(WebDriver driver) {
 	        super(driver);
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	    }
 
-	    @FindBy(xpath = "//input[@id='username']")
+	    @FindBy(xpath = "//input[@id='input-email']")
 	    WebElement username;
 
-	    @FindBy(xpath = "//input[@id='password']")
+	    @FindBy(xpath = "//input[@id='input-password']")
 	    WebElement Password;
 	    
 	    
-	    @FindBy(xpath = "//button[@id='submit']")
+	    @FindBy(xpath = "//input[@value='Login']")
 	    WebElement loginbutton;
 	    
 	    

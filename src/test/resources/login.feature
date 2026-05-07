@@ -14,6 +14,3 @@ Examples:
   | usernameInPropFile  | PasswordtnPropFile  |
 
 
-
-
-
