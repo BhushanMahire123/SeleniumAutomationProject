@@ -12,6 +12,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.ConfigReader;
+import utils.RandomDataGenerator;
 
 public class tutorialsninjasRegisterTest {
 
@@ -57,12 +58,11 @@ public class tutorialsninjasRegisterTest {
     @And("user enters email {string}")
     public void user_enters_email(String emailKey) {
 
-        String email =
-                ConfigReader.getProperty(emailKey)
-                + System.currentTimeMillis()
-                + "@gmail.com";
+        String dynamicEmail = RandomDataGenerator.generateEmail();
 
-        registerPage.enterEmail(email);
+        System.out.println("Generated Email: " + dynamicEmail);
+
+        registerPage.enterEmail(dynamicEmail);
     }
 
     @And("user enters telephone {string}")
@@ -97,6 +97,29 @@ public class tutorialsninjasRegisterTest {
 
         registerPage.clickContinue();
     }
+    
+    @Then("user verify Warning message {string}")
+    public void user_should_see_warning_message(String expectedWarningMsg) {
+
+   
+
+        String actualWarning = registerPage.getWarningMessage();
+
+        Assert.assertTrue(actualWarning.contains(expectedWarningMsg));
+
+    }
+    
+    
+    @Then("Password mismatch warning should display {string}")
+    public void password_mismatch_warning_should_display(String expectedMsg) {
+
+       
+        String actualMsg = registerPage.getPasswordMismatchWarning();
+
+        Assert.assertEquals(actualMsg, expectedMsg);
+
+    }
+
 
     @Then("Account should get created successfully")
     public void account_should_get_created_successfully() {

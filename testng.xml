@@ -2,17 +2,38 @@
 
 <suite name="Cucumber Suite" verbose="1">
 
-    <!-- APT-18 FIRST -->
+    <!-- APT-1 FIRST -->
     <test name="APT-18 Execution">
         <classes>
             <class name="runner.TestRunnerAPT18"/>
         </classes>
     </test>
 
-    <!-- APT-19 SECOND -->
+    <!-- APT-2 SECOND -->
     <test name="APT-19 Execution">
         <classes>
             <class name="runner.TestRunnerAPT19"/>
+        </classes>
+    </test>
+
+    <!-- APT-3 THIRD -->
+    <test name="APT-20 Execution">
+        <classes>
+            <class name="runner.TestRunnerAPT20"/>
+        </classes>
+    </test>
+
+    <!-- APT-4 FOURTH -->
+    <test name="APT-30 Execution">
+        <classes>
+            <class name="runner.TestRunnerAPT30"/>
+        </classes>
+    </test>
+
+    <!-- APT-32 FIFTH -->
+    <test name="APT-32 Execution">
+        <classes>
+            <class name="runner.TestRunnerAPT32"/>
         </classes>
     </test>
 

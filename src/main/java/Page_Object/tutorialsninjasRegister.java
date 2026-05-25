@@ -34,6 +34,10 @@ public class tutorialsninjasRegister extends BasePage {
 	    By confirmPassword = By.id("input-confirm");
 	    By privacyPolicy = By.name("agree");
 	    By continueBtn = By.xpath("//input[@value='Continue']");
+	   
+	    @FindBy(xpath = "//div[@class='text-danger']")
+	    WebElement warningMsg;
+
 	    By successMsg = By.xpath("//h1[text()='Your Account Has Been Created!']");
 
 	    public void enterFirstName(String fname) {
@@ -67,13 +71,22 @@ public class tutorialsninjasRegister extends BasePage {
 	    public void clickContinue() {
 	        driver.findElement(continueBtn).click();
 	    }
+	    
+	    public String getWarningMessage() {
+	        return warningMsg.getText();
+	    }
+	
 
 	    public boolean verifyAccountCreated() {
 	        return driver.findElement(successMsg).isDisplayed();
 	    }
+	    
+	    public String getPasswordMismatchWarning() {
+	        return warningMsg.getText();
+	    
 	}
 
-
+}
 
 
 
