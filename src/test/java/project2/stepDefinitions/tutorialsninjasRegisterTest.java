@@ -58,9 +58,11 @@ public class tutorialsninjasRegisterTest {
     @And("user enters email {string}")
     public void user_enters_email(String emailKey) {
 
-        String dynamicEmail = RandomDataGenerator.generateEmail();
+        String dynamicEmail =
+                RandomDataGenerator.generateEmail();
 
-        System.out.println("Generated Email: " + dynamicEmail);
+        System.out.println(
+                "Generated Email: " + dynamicEmail);
 
         registerPage.enterEmail(dynamicEmail);
     }
@@ -95,31 +97,29 @@ public class tutorialsninjasRegisterTest {
     @And("User clicks on continue button")
     public void user_clicks_on_continue_button() {
 
-        registerPage.clickContinue();
+        registerPage.clickContinueBtn();
     }
-    
+
     @Then("user verify Warning message {string}")
-    public void user_should_see_warning_message(String expectedWarningMsg) {
+    public void user_verify_warning_message(
+            String expectedWarningMsg) {
 
-   
+        String actualWarning =
+                registerPage.getWarningMessage();
 
-        String actualWarning = registerPage.getWarningMessage();
-
-        Assert.assertTrue(actualWarning.contains(expectedWarningMsg));
-
+        Assert.assertTrue(
+                actualWarning.contains(expectedWarningMsg));
     }
-    
-    
-    @Then("Password mismatch warning should display {string}")
-    public void password_mismatch_warning_should_display(String expectedMsg) {
 
-       
-        String actualMsg = registerPage.getPasswordMismatchWarning();
+    @Then("Password mismatch warning should display {string}")
+    public void password_mismatch_warning_should_display(
+            String expectedMsg) {
+
+        String actualMsg =
+                registerPage.getWarningMessage();
 
         Assert.assertEquals(actualMsg, expectedMsg);
-
     }
-
 
     @Then("Account should get created successfully")
     public void account_should_get_created_successfully() {

@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
         },
         monochrome = true,
         publish = true,
-        tags = "@released4run"
+        tags = "@daily1"
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
