@@ -1,6 +1,7 @@
 Feature: Hybrid High Priority flow 
 
 @released4run
+@WAP-3
 Scenario Outline: Login Test
  Given User launches login page
   And user enter username name "<usernameKey>"
@@ -13,6 +14,8 @@ Examples:
   
   
 @daily1
+@WAP-2
+
 
 Scenario Outline: Successful user registration
 
