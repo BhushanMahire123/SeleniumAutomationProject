@@ -51,3 +51,16 @@ Given User launches register page
  Examples:
   | firstname | lastname | email2  | telephone   | password  | confirmpassword |warningmsg                             |passmismatchmsg|
   | firstname | lastname | email2  | telephone   | password1  | password2       | E-Mail Address is already registered! |Password confirmation does not match password!|
+  
+  
+  
+  
+@APT-9
+Scenario: Register with mismatched password
+Given User launches orangehrm url
+When user scroll to featured section
+And  user click on macbook product
+When user scroll to addtocart section
+Then add to cart section should be visible
+And user click on add to cart button
+And user click on add to cart icon

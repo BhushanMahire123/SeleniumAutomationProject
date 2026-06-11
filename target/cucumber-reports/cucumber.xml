@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.413" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Hybrid High Priority flow" name="Successful user registration - Example #1.1" time="13.068">
+<testsuite name="Cucumber" time="25.991" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Hybrid High Priority flow" name="Register with mismatched password" time="25.644">
 <system-out><![CDATA[
-Given User launches register page...........................................passed
-When user enters firstname "firstname"......................................passed
-And user enters lastname "lastname".........................................passed
-And user enters email "email"...............................................passed
-And user enters telephone "telephone".......................................passed
-And user enters password "passwordtest".....................................passed
-And user enters confirm password "confpassword".............................passed
-And user clicks privacy policy checkbox.....................................passed
-And User clicks on continue button..........................................passed
-Then Account should get created successfully................................passed
+Given User launches orangehrm url...........................................passed
+When user scroll to featured section........................................passed
+And user click on macbook product...........................................passed
+When user scroll to addtocart section.......................................passed
+Then add to cart section should be visible..................................passed
+And user click on add to cart button........................................passed
+And user click on add to cart icon..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

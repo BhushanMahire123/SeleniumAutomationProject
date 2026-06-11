@@ -38,7 +38,7 @@ public class tutorialsninjasRegisterTest {
     @Given("User launches register page")
     public void user_launches_register_page() {
 
-        driver.get(ConfigReader.getProperty("registerUrl"));
+        driver.get(ConfigReader.getProperty("orangehrmurl"));
     }
 
     @When("user enters firstname {string}")
